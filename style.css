@@ -45,6 +45,7 @@ body {
 
 .menu-icons ul li {
   margin-right: 1rem;
+  cursor: pointer;
 }
 
 .menu ul {
@@ -56,6 +57,7 @@ body {
 
 .menu ul li {
   margin-right: 1rem;
+  cursor: pointer;
 }
 
 /* hero */
@@ -195,11 +197,12 @@ body {
 .community-content {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 0.5rem;
 }
 
 .community img {
-  width: 7rem;
-  height: 6rem;
+  width: 6rem;
+  height: 5rem;
   padding-right: 0.5rem;
 }
 
