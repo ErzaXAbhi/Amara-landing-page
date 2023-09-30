@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@900&family=Nanum+Myeongjo:wght@700&family=Open+Sans&family=Poppins:wght@100;400;500;600&family=Satisfy&family=Young+Serif&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 
+
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Satisfy', cursive;
+
+*/
+
+:root {
+  --dark: #000;
+  --primary: #ffffff;
+  --secondary: #e3f0ff;
+  --third: #ffefd6;
+}
+
+body {
+  border: 8px solid var(--dark);
+  height: 100dvh;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+/* navigation */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: var(--primary);
+}
+
+.menu-icons ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 1rem;
+}
+
+.menu-icons ul li {
+  margin-right: 1rem;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 1rem;
+}
+
+.menu ul li {
+  margin-right: 1rem;
+}
+
+/* hero */
+
+.hero {
+  display: grid;
+  grid-template-columns: 35% 25% 40%;
+  margin-bottom: -1.6rem;
+}
+
+.brand-name {
+  display: flex;
+  margin: 2rem;
+  background: var(--primary);
+}
+
+.brand-name h1 {
+  font-family: "Young Serif", serif;
+  color: var(--dark);
+  font-size: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  margin-left: 4rem;
+}
+
+.mission {
+  background: var(--secondary);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mission h2 {
+  line-height: 1;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.mission p {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 5rem;
+}
+
+.mission h3 {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.mission button {
+  border: none;
+  color: var(--dark);
+  background: #dadada;
+  border-radius: 50%;
+  margin-left: 1rem;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.mission button i {
+  font-size: 0.9rem;
+}
+
+.shop {
+  background: var(--third);
+  padding: 2.2rem;
+}
+
+.shop p {
+  font-weight: 500;
+  margin-bottom: 8rem;
+}
+
+.shop h3 {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.shop button {
+  border: none;
+  color: var(--dark);
+  background: #dadada;
+  border-radius: 50%;
+  margin-left: 1rem;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.shop button i {
+  font-size: 0.9rem;
+}
+
+.product {
+  background: var(--secondary);
+  padding: 1.07rem;
+}
+
+.product-list {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 34%;
+  height: 15%;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.product-list li {
+  list-style-type: square;
+  margin-left: 1rem;
+  font-weight: 600;
+  margin-top: -0.5rem;
+}
+
+.product img {
+  margin-left: 2rem;
+  height: 13rem;
+}
+
+.community {
+  background: var(--third);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.community h3 {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.community-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.community img {
+  width: 7rem;
+  height: 6rem;
+  padding-right: 0.5rem;
+}
+
+.community-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.community-links a {
+  position: relative;
+  text-decoration: none;
+  font-size: 1rem;
+  color: var(--dark);
+  font-weight: 500;
+}
+
+.community-links a::before {
+  content: "";
+  position: absolute;
+  bottom: 0.075rem;
+  height: 0.083rem;
+  background: var(--dark);
+  transition: transform 0.5s ease-in-out;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+.community-links a:hover::before {
+  width: 55%;
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.community-links span {
+  font-weight: 500;
+  color: #acabab;
+  font-size: 1rem;
+}
+
+.blog {
+  background: url(./model.jpg) center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+}
+
+.blog-list {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 18%;
+  height: 15%;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.blog-list li {
+  list-style-type: square;
+  margin-left: 1rem;
+  margin-top: -0.5rem;
+  font-weight: 600;
+}
