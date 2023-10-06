@@ -22,7 +22,7 @@ font-family: 'Satisfy', cursive;
 
 body {
   border: 8px solid var(--dark);
-  height: 100dvh;
+  height: 102.5dvh;
   font-family: "Poppins", sans-serif;
   display: flex;
   flex-direction: column-reverse;
@@ -34,6 +34,7 @@ body {
   display: flex;
   justify-content: space-between;
   background: var(--primary);
+  margin-top: 1rem;
 }
 
 .menu-icons ul {
@@ -72,6 +73,7 @@ body {
   display: flex;
   margin: 2rem;
   background: var(--primary);
+  visibility: hidden;
 }
 
 .brand-name h1 {
@@ -85,12 +87,15 @@ body {
   margin-left: 4rem;
 }
 
+/* Mission */
+
 .mission {
   background: var(--secondary);
   padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  visibility: hidden;
 }
 
 .mission h2 {
@@ -126,9 +131,15 @@ body {
   font-size: 0.9rem;
 }
 
+.mission button i:hover {
+  transform: rotate(90deg);
+  transition: all 0.2s ease-in-out;
+}
+
 .shop {
   background: var(--third);
   padding: 2.2rem;
+  visibility: hidden;
 }
 
 .shop p {
@@ -156,9 +167,17 @@ body {
   font-size: 0.9rem;
 }
 
+.shop button i:hover {
+  transform: rotate(90deg);
+  transition: all 0.2s ease-in-out;
+}
+
+/* product */
+
 .product {
   background: var(--secondary);
   padding: 1.07rem;
+  visibility: hidden;
 }
 
 .product-list {
@@ -179,6 +198,11 @@ body {
 .product img {
   margin-left: 2rem;
   height: 13rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.product img:hover {
+  transform: scale(1.3);
 }
 
 .community {
@@ -187,6 +211,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  visibility: hidden;
 }
 
 .community h3 {
@@ -249,6 +274,7 @@ body {
   width: 100%;
   height: 100%;
   padding: 1rem;
+  visibility: hidden;
 }
 
 .blog-list {
@@ -264,4 +290,14 @@ body {
   margin-left: 1rem;
   margin-top: -0.5rem;
   font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  body {
+    height: 100%;
+  }
+  .hero {
+    grid-template-columns: 100%;
+    height: 100dvh;
+  }
 }
