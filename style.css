@@ -21,7 +21,7 @@ font-family: 'Satisfy', cursive;
 }
 
 body {
-  border: 8px solid var(--dark);
+ 
   height: 102.5dvh;
   font-family: "Poppins", sans-serif;
   display: flex;
